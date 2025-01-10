@@ -11,3 +11,8 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+# Code Changes
+    bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(UniswapV2Pair).creationCode));
+   Code for init Pair Hash
+
+// Deploy Uniswap V2 Factory
