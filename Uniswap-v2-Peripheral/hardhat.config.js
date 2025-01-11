@@ -16,5 +16,5 @@ module.exports = {
   etherscan: {
     apiKey: process.env.Verification_Key, // Verification key of related network
   },
-  solidity: "0.5.16",
+  solidity: "0.6.6",
 };
