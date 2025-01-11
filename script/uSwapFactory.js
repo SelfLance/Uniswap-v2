@@ -1,17 +1,15 @@
-// This setup uses Hardhat Ignition to manage smart contract deployments.
-// Learn more about it at https://hardhat.org/ignition
 
-const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+const hre = require("hardhat");
+async function main() {
 
+  let  feeSetterAddress ="0xC6C385dfe722557591f8e2e0297Ad06F2C083A2B"
+  const Contract = await ethers.getContractFactory("UniswapV2Factory");
+  const uSwapFactory = await Contract.deploy(feeSetterAddress);
 
+  console.log("Swap Factory:", uSwapFactory.target);
+}
 
-module.exports = buildModule("UniswapV2Factory", (m) => {
-let feeSetter = "0xC6C385dfe722557591f8e2e0297Ad06F2C083A2B"
-
-  const lock =  m.contract("UniswapV2Factory", [feeSetter]);
-
-  console.log("UniswapV2Factory deployed at", lock
-  );
-
-  // return { lock };
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
 });
