@@ -27,6 +27,9 @@ https://amoy.polygonscan.com/address/0x2ed2A8499d8b09BB78e6D6B23e1Fd342C2c2c7CA#
    In Libraries update UniswapV2Library change init hash by removeing 0x from Unswap Factory Contract that you deployed
 # Deploy Uniswap V2 Router 02
 
+Successfully verified contract UniswapV2Router02 on the block explorer.
+https://amoy.polygonscan.com/address/0xA906Ee47104DE86dFda0864b7Fb74bc61Bddc8Ee#code
+
 # Matic WETH Deployed
 Successfully verified contract MaticWETH on the block explorer.
 https://amoy.polygonscan.com/address/0x9A36366eEcd4D0Bd9A2ea176D6e6fC39D73f8d68#code
