@@ -16,3 +16,8 @@ npx hardhat ignition deploy ./ignition/modules/Lock.js
    Code for init Pair Hash
 
 // Deploy Uniswap V2 Factory
+# Contracts on Amoy Testnet
+Swap Factory: 0x2ed2A8499d8b09BB78e6D6B23e1Fd342C2c2c7CA
+
+Successfully verified contract UniswapV2Factory on the block explorer.
+https://amoy.polygonscan.com/address/0x2ed2A8499d8b09BB78e6D6B23e1Fd342C2c2c7CA#code
